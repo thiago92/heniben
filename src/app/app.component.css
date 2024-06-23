@@ -215,12 +215,6 @@ a {
     text-align: justify;
 }
 
-.restitution img {
-    width: 100%;
-    border-radius: 10px;
-    
-}
-
 .credit {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -254,12 +248,6 @@ a {
     font-size: 20px;
     padding-left: 20px;
     text-align: justify;
-}
-
-.credit img {
-    width: 100%;
-    border-radius: 10px;
-    
 }
 
 .philosophy {
@@ -523,49 +511,6 @@ footer .col-sm-12 {
         padding: 0;
     }
 
-    .about .about-container .container .row .col-sm-6:nth-child(2) .about-img {
-        display: block;
-    }
-
-    .about .about-container .container .row .col-sm-6:nth-child(2) .about-img img {
-        width: 100%;
-    }
-
-    .chronometer {
-        margin-top: 350px;
-    }
-
-    .chronometer h2 {
-     font-size: 24px;
-    }
-
-    .chronometer p {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .chronometer .col-sm-3 {
-        width: 50%;
-    }
-
-    .chronometer .col-sm-3:nth-child(3), .chronometer .col-sm-3:nth-child(4) {
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-
-    .electoral-stronghold h2 {
-        font-size: 24px;
-    }
-
-    .electoral-stronghold p {
-        font-size: 18px;
-        text-align: justify;
-    }
-
-    .electoral-stronghold img {
-        width: 100%;
-    }
-
     .philosophy {
         height: 1200px;
     }
@@ -612,6 +557,39 @@ footer .col-sm-12 {
         width: 60px;
         margin-left: 5px;
         margin-right: 5px;
+    }
+
+    .credit p {
+        padding: 0;
+    }
+
+    .restitution p {
+        padding: 0;
+    }
+
+    .credit .container .row, .restitution .container .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .restitution .col-sm-6:nth-child(2) {
+        height: 200px;
+        width: 95%;
+
+    }
+
+    .credit .col-sm-6:nth-child(1) {
+        height: 200px;
+        width: 95%;
+
+    }
+
+    .credit .row .col-sm-6:nth-child(1) {
+        order: 2;
+    }
+      .credit .row .col-sm-6:nth-child(2) {
+        order: 1;
     }
 
 }
