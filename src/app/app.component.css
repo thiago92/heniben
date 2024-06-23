@@ -585,10 +585,31 @@ footer .col-sm-12 {
 
     }
 
+    .restitution h2 {
+        font-size: 24px;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .restitution p {
+        font-size: 18px;
+    }
+
+    .credit h2 {
+        font-size: 24px;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .credit p {
+        font-size: 18px;
+    }
+
     .credit .row .col-sm-6:nth-child(1) {
         order: 2;
     }
-      .credit .row .col-sm-6:nth-child(2) {
+
+    .credit .row .col-sm-6:nth-child(2) {
         order: 1;
     }
 
