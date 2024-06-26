@@ -60,19 +60,27 @@ a {
     color: #FFD500 !important;
     cursor: pointer;
     transition: .25s;
+    font-size: 18px;
 }
 
 .nav-link:hover {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 700;
 }
 
-.navbar-nav button {
-    font-size: 16px !important;
+.navbar-nav a button {
+    font-size: 18px !important;
     margin-left: 10px;
     background-color: #FFD500 !important;
     color: #000 !important;
     font-weight: 800 !important;
+    transition: .25s;
+}
+
+.navbar-nav a:hover button {
+    font-size: 20px !important;
+    color: #000 !important;
+    font-weight: 700 !important;
 }
 
 .btn-costum {
