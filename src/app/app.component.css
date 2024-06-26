@@ -35,14 +35,18 @@ a {
     margin-left: 10px;
     color: #FFD500;
     font-weight: 800;
+    font-family: "Arimo", sans-serif !important;
+    text-transform: uppercase;
 }
 
 .navbar-brand span {
     font-weight: 400;
+    font-family: "Arimo", sans-serif !important;
+    text-transform: none;
 }
 
 .logo-nav {
-    width: 7.5%;
+    width: 10%;
     cursor: pointer;
 }
 
@@ -59,8 +63,8 @@ a {
 }
 
 .nav-link:hover {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .navbar-nav button {
@@ -83,7 +87,7 @@ a {
 }
 
 .spaccing {
-    padding: 65px;
+    padding: 80px;
 }
 
 .banner {
@@ -151,7 +155,7 @@ a {
 }
 
 .our-services {
-    background-color: #000;
+    background-color: #d9d9d9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,9 +167,10 @@ a {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 40px;
-    border-bottom: 2px solid #FFD500;
+    border-bottom: 2px solid #000;
     padding-right: 20px;
-    color: #FFD500;
+    color: #000;
+    text-align: center;
 }
 
 .our-services p {
@@ -180,9 +185,46 @@ a {
     border-radius: 10px;
 }
 
+.energy {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #d9d9d9;
+}
+
+.energy .col-sm-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.energy .col-sm-6:nth-child(1) {
+    background-image: url(../assets/clientes.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.energy h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #000;
+    padding-right: 20px;
+    color: #000;
+}
+
+.energy p {
+    font-size: 20px;
+    padding-left: 20px;
+    text-align: justify;
+}
+
 .restitution {
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color: #d9d9d9;
 }
 
 .restitution .col-sm-6 {
@@ -218,6 +260,7 @@ a {
 .credit {
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color: #d9d9d9;
 }
 
 .credit .col-sm-6 {
@@ -371,16 +414,20 @@ footer .col-sm-4:nth-child(1) {
 }
 
 footer .col-sm-4:nth-child(1) p {
+    font-family: "Arimo", sans-serif !important;
     font-size: 22px;
     font-weight: 700;
     color: #8c6c04;
     margin-left: 20px;
     margin-top: 15px;
+    text-transform: uppercase;
 }
 
 footer .col-sm-4:nth-child(1) p span {
+    font-family: "Arimo", sans-serif !important;
     font-size: 20px;
     font-weight: 500;
+    text-transform: none;
 }
 
 footer .col-sm-4:nth-child(1) img{
@@ -519,6 +566,22 @@ footer .col-sm-12 {
         font-size: 28px !important;
     }
 
+    .philosophy .title {
+        margin-bottom: 40px;
+    }
+
+    .our-services {
+        padding-bottom: 0;
+    }
+
+    .our-services h2 {
+        font-size: 28px;
+    }
+
+    .energy {
+        padding-top: 0px;
+    }
+
     ::ng-deep .modal-content {
         width: 100% !important;
     }
@@ -534,14 +597,6 @@ footer .col-sm-12 {
     ::ng-deep .modal-dialog {
         margin-left: 2.5%;
         margin-right: 2.5%;
-    }
-
-    .conclusion h2 {
-        font-size: 24px;
-    }
-    
-    .conclusion p {
-        font-size: 18px;
     }
 
     footer .col-sm-4:nth-child(2) {
@@ -582,7 +637,6 @@ footer .col-sm-12 {
     .credit .col-sm-6:nth-child(1) {
         height: 200px;
         width: 95%;
-
     }
 
     .restitution h2 {
@@ -611,6 +665,42 @@ footer .col-sm-12 {
 
     .credit .row .col-sm-6:nth-child(2) {
         order: 1;
+    }
+
+    .energy h2 {
+        font-size: 24px;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .energy p {
+        font-size: 18px;
+        padding-left: 0;
+    }
+
+    .energy .row .col-sm-6:nth-child(1) {
+        order: 2;
+    }
+
+    .energy .row .col-sm-6:nth-child(2) {
+        order: 1;
+    }
+
+    .energy .col-sm-6:nth-child(1) {
+        height: 200px;
+        width: 95%;
+    }
+
+    .energy .container .row, .restitution .container .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .philosophy-footer {
+        background-color: #000;
+        height: 60px;
+        width: 100%;
     }
 
 }

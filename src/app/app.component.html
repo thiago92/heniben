@@ -3,7 +3,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container container-fluid">
       <img class="logo-nav" src="../assets/logo.jpeg" alt="logo-isa">
-      <a class="navbar-brand" href="#">Heniben <br /><span>Assessoria e Negócios</span></a>
+      <a class="navbar-brand" href="#banner">Heniben <br /><span>Assessoria e Negócios</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -19,16 +19,12 @@
             <a class="nav-link" href="#our-services">Nossos Serviços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#restitution">Restituição Tributária</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#credt">Transação de Crédito Fiscal</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#philosophy">Nossa Filosofia</a>
           </li>
           <li class="nav-item">
-            <button class="btn-costum">Fale Conosco</button>
+            <a href="https://wa.me/5541999548828" target="_blank">
+              <button class="btn-costum">Fale Conosco</button>
+            </a>
           </li>
         </ul>
       </div>
@@ -43,7 +39,9 @@
       <p>
         Na HENIBEN, fornecemos soluções inovadoras em energia elétrica, restituição tributária e crédito fiscal, sempre com foco na excelência e na confiança.
       </p>
-      <button class="btn-costum">Fale conosco</button>
+      <a href="https://wa.me/5541999548828" target="_blank">
+        <button class="btn-costum">Fale Conosco</button>
+      </a>
     </div>
   </div>
 
@@ -73,13 +71,31 @@
             <h2>
               Nossos Serviços
             </h2>
-            <p>
-              Na HENIBEN, oferecemos uma gama abrangente de serviços projetados para otimizar a gestão de energia e finanças de nossos clientes. Nosso serviço de energia elétrica por assinatura proporciona uma solução moderna e econômica, permitindo que os clientes gerenciem seus gastos de maneira previsível e sustentável, eliminando surpresas na conta de luz e promovendo um consumo mais consciente e eficiente. Além disso, nossa equipe de especialistas em restituição tributária trabalha diligentemente para identificar e recuperar valores pagos indevidamente em tributos, assegurando que as empresas estejam em conformidade com a legislação vigente e maximizem seus recursos financeiros. Complementando nossas ofertas, facilitamos a transação de crédito fiscal, fornecendo um caminho seguro e eficaz para a negociação e otimização de ativos fiscais. Com essa abordagem, ajudamos nossos clientes a aproveitar ao máximo seus créditos, contribuindo significativamente para a saúde financeira e o crescimento estratégico de seus negócios. Na HENIBEN, cada serviço é cuidadosamente desenvolvido e executado com um foco incansável na excelência e na satisfação do cliente.
-            </p>
           </div>
         </div>
-        <div class="col-sm-12">
-          <img src="../assets/clientes.webp" alt="familia placa solar">
+      </div>
+    </div>
+  </div>
+
+  <div class="energy" id="credt">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          
+        </div>
+        <div class="col-sm-6">
+          <h2>
+            Energia Solar por Assinatura
+          </h2>
+          <p>
+            A HENIBEN atua como representante de diversas empresas especializadas em energia solar, oferecendo soluções sustentáveis e inovadoras para nossos clientes através do serviço de energia solar por assinatura. Nosso papel é facilitar o acesso à energia limpa e renovável, colaborando com empresas que são líderes no mercado de tecnologia solar.
+          </p>
+          <p>
+            Nossa abordagem é simples e eficiente. Em parceria com nossos provedores, instalamos painéis solares de alta eficiência em locais estratégicos para garantir a máxima captação de energia solar. Ao invés de adquirir e instalar seus próprios painéis, os clientes podem optar por assinar nossos planos personalizados, pagando uma taxa mensal acessível que cobre o consumo de energia solar gerada pelas instalações.
+          </p>
+          <p>
+            Além disso, monitoramos continuamente o desempenho dos sistemas solares em nome de nossos clientes, garantindo que recebam a quantidade máxima de energia produzida. Oferecemos suporte contínuo e serviços de manutenção para assegurar o funcionamento eficiente dos equipamentos ao longo do tempo. Na HENIBEN, estamos comprometidos em tornar a energia solar acessível e econômica, proporcionando uma solução ambientalmente responsável para empresas e residências.
+          </p>
         </div>
       </div>
     </div>
@@ -137,7 +153,7 @@
           <span>Leia mais...</span>
         </div>
         <div (click)="open(entrepreneur)" class="col-sm-4">
-          <h3>Prioridade no Atendimento</h3>
+          <h3>Transparência</h3>
           <img src="../assets/atendimento.jpg" alt="empreendedorismo-para-todos">
           <span>Leia mais...</span>
         </div>
@@ -172,28 +188,25 @@
 
     <ng-template #entrepreneur let-modal>
       <div class="modal-header">
-        <h4 class="modal-title" id="modal-basic-title">Prioridade no Atendimento</h4>
+        <h4 class="modal-title" id="modal-basic-title">Transparência</h4>
         <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
       </div>
       <div class="modal-body">
         <p>
-          Na HENIBEN, o cliente sempre vem em primeiro lugar. Dedicamo-nos a oferecer um atendimento personalizado e eficiente, respondendo prontamente a todas as dúvidas e necessidades. Nossa equipe está sempre disponível para proporcionar suporte contínuo, garantindo que cada cliente se sinta valorizado e bem atendido. A satisfação do cliente é nossa maior recompensa, e trabalhamos incessantemente para assegurar que cada interação reflita nosso compromisso com a excelência no atendimento. Na HENIBEN, estamos aqui para ouvir, ajudar e superar as expectativas dos nossos clientes.
+          Na HENIBEN, a transparência é um valor fundamental que guia todas as nossas interações e operações. Valorizamos a clareza e a honestidade em cada aspecto do nosso serviço, garantindo que nossos clientes estejam sempre bem informados e confiantes nas decisões que tomam conosco.
+        </p>
+        <p>
+          Nossa abordagem transparente começa desde o primeiro contato. Estamos comprometidos em fornecer informações claras e precisas sobre nossos serviços, condições e custos envolvidos. Nosso objetivo é construir relacionamentos baseados na confiança mútua, onde cada cliente se sinta seguro e bem orientado em suas escolhas.
+        </p>
+        <p>
+          Além disso, buscamos manter uma comunicação aberta ao longo de todo o processo. Estamos sempre disponíveis para responder perguntas, resolver dúvidas e oferecer suporte personalizado. Na HENIBEN, acreditamos que a transparência não é apenas um valor, mas uma prática diária que fortalece nossa relação com os clientes e garante resultados positivos a longo prazo.
         </p>               
         <img src="../assets/atendimento.jpg" alt="empreendedorismo-para-todos">     
       </div>
     </ng-template>
   </div>
 
-  <div class="conclusion">
-    <div class="container">
-      <h2>
-        Transforme sua Gestão com a HENIBEN
-      </h2>
-      <p>
-        Na HENIBEN, estamos comprometidos em ser seu parceiro de confiança na gestão de energia elétrica, restituição tributária e transação de crédito fiscal. Nossa missão é fornecer soluções inovadoras, eficientes e de alta qualidade que atendam às suas necessidades específicas, sempre com foco na excelência e na transparência. Valorizamos a relação com nossos clientes e buscamos constantemente superar suas expectativas através de um atendimento personalizado e dedicado. Acreditamos que, ao promover a sustentabilidade e a eficiência, contribuímos para o sucesso e crescimento dos negócios de nossos clientes. Entre em contato conosco e descubra como a HENIBEN pode transformar a gestão de energia e finanças da sua empresa, proporcionando tranquilidade, economia e resultados excepcionais.
-      </p>
-    </div>
-  </div>
+  <div class="philosophy-footer"></div>
 
   <footer id="footer">
     <div class="container">
@@ -206,7 +219,7 @@
           <h4>Nos contate</h4>
           <ul>
             <li><fa-icon [icon]="faEnvelope"></fa-icon> contato&#64;heniben.com.br</li>
-            <li><fa-icon [icon]="faPhone" ></fa-icon> (xx) xxxx-xxxx</li>
+            <li><fa-icon [icon]="faPhone" ></fa-icon> (41) 99954-8828</li>
           </ul>
         </div>
         <div class="col-sm-4">
